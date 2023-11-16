@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_unnecessary_containers, prefer_const_constructors, duplicate_ignore
+
 import 'package:flutter/material.dart';
 import 'package:navegacion1/src/widgets/icon_containers.dart';
 import 'package:navegacion1/src/widgets/register.dart';
@@ -19,10 +21,10 @@ class _SignUpState extends State<SignUp> {
           height: double.infinity,
           // ignore: prefer_const_constructors
           decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: const <Color>[
+            gradient: const LinearGradient(
+              colors: <Color>[
                 Color.fromARGB(255, 19, 216, 216),
-                Color.fromARGB(237, 37, 228, 37),
+                Color.fromRGBO(181, 122, 221, 0.922),
               ],
               begin: Alignment.topCenter,
             ),

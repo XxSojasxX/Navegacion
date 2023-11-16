@@ -1,3 +1,5 @@
+// ignore_for_file: unused_field, null_check_always_fails, prefer_is_empty
+
 import 'package:flutter/material.dart';
 import 'package:navegacion1/src/widgets/input_text.dart';
 
@@ -23,7 +25,7 @@ class _LoginFormState extends State<LoginForm> {
               keyboard: TextInputType.emailAddress,
               icon: const Icon(Icons.verified_user),
               onChanged: (data) {
-                _email = data!;
+                _email = data;
               },
               validator: (data) {
                 if (data!.contains("@")) {
@@ -31,7 +33,7 @@ class _LoginFormState extends State<LoginForm> {
                 }
                 return null!;
               }),
-          Divider(
+          const Divider(
             height: 50.0,
           ),
           InputText(
@@ -40,7 +42,7 @@ class _LoginFormState extends State<LoginForm> {
               obsecure: false,
               icon: const Icon(Icons.lock_clock),
               onChanged: (data) {
-                _password = data!;
+                _password = data;
               },
               validator: (data) {
                 if (data?.trim().length == 0) {
@@ -48,7 +50,7 @@ class _LoginFormState extends State<LoginForm> {
                 }
                 return null!;
               }),
-          Divider(
+          const Divider(
             height: 20.0,
           ),
           SizedBox(
@@ -56,7 +58,7 @@ class _LoginFormState extends State<LoginForm> {
             height: 60.0,
             child: ElevatedButton(
               onPressed: () {},
-              child: Text(
+              child: const Text(
                 "Ingresar",
                 style: TextStyle(
                   color: Colors.white,

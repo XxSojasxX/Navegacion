@@ -1,3 +1,5 @@
+// ignore_for_file: unnecessary_this, duplicate_ignore
+
 import 'package:flutter/material.dart';
 
 class InputText extends StatelessWidget {
@@ -20,8 +22,11 @@ class InputText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // ignore: avoid_unnecessary_containers
     return Container(
+      // ignore: duplicate_ignore
       child: TextFormField(
+        // ignore: unnecessary_this
         keyboardType: this.keyboard,
         obscureText: this.obsecure,
         onChanged: this.onChanged,
@@ -29,7 +34,7 @@ class InputText extends StatelessWidget {
         decoration: InputDecoration(
           hintText: this.hint,
           labelText: this.label,
-          labelStyle: TextStyle(
+          labelStyle: const TextStyle(
             color: Colors.black12,
             fontFamily: "FreedokaOne",
             fontSize:  25.0,

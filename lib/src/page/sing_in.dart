@@ -12,6 +12,7 @@ class SingIn extends StatefulWidget {
 class _SingInState extends State<SingIn> {
   @override
   Widget build(BuildContext context) {
+    // ignore: avoid_unnecessary_containers
     return Container(
       child: Scaffold(
         body: Container(

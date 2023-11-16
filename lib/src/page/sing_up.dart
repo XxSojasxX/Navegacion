@@ -12,12 +12,13 @@ class SingUp extends StatefulWidget {
 class _SingUpState extends State<SingUp> {
   @override
   Widget build(BuildContext context) {
+    // ignore: avoid_unnecessary_containers
     return Container(
       child: Scaffold(
         body: Container(
           width: double.infinity,
           height: double.infinity,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             gradient: LinearGradient(
               colors: <Color>[
                 Color.fromARGB(255, 90, 97, 97),
@@ -27,14 +28,15 @@ class _SingUpState extends State<SingUp> {
             ),
           ),
           child: ListView(
-            padding: EdgeInsets.symmetric(
+            padding: const EdgeInsets.symmetric(
               horizontal: 40.0,
               vertical: 200,
             ),
+            // ignore: prefer_const_literals_to_create_immutables
             children: <Widget>[
               // Aquí va la URL de una imagen
-              IconContainers(url: "images/logo.jpg"),
-              Center(
+              const IconContainers(url: "images/logo.jpg"),
+              const Center(
                 child: Text(
                   "Register",
                   style: TextStyle(
@@ -43,10 +45,10 @@ class _SingUpState extends State<SingUp> {
                   ),
                 ),
               ),
-              Divider(
+              const Divider(
                 height: 20.0,
               ),
-              Center(
+              const Center(
                 child: Text(
                   "Pantalla N°3",
                   style: TextStyle(
@@ -55,7 +57,7 @@ class _SingUpState extends State<SingUp> {
                   ),
                 ),
               ),
-              Divider(
+              const Divider(
                 height: 50.0,
               ),
               

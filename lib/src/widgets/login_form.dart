@@ -9,21 +9,30 @@ class LoginForm extends StatefulWidget {
 }
 
 class _LoginFormState extends State<LoginForm> {
-  String _email = "";
-  String _password="";
-
+  late String _email;
+  late String _password;
   @override
   Widget build(BuildContext context) {
     return Form(
+        child: Center(
       child: Column(
-        children: const <Widget>[
+        children: <Widget>[
           InputText(
-            hint: "Email Address",
-            label: "Email Address",
-            keyboard: TextInputType.emailAddress,
-          )
+              hint: "Email Addres",
+              label: "Email",
+              keyboard: TextInputType.emailAddress,
+              icon: const Icon(Icons.verified_user),
+              onChanged: (data) {
+                _email = data!;
+              },
+              validator: (data) {
+                if (data!.contains("@")) {
+                  return 'email invalido';
+                }
+                return null!;
+              })
         ],
       ),
-    );
+    ));
   }
 }

@@ -22,7 +22,7 @@ class _SignInState extends State<SignIn> {
             gradient: LinearGradient(
               colors: <Color>[
                 Color.fromARGB(255, 0, 255, 255),
-                Color.fromARGB(236, 31, 31, 204),
+                Color.fromARGB(235, 126, 126, 255),
               ],
               begin: Alignment.topCenter,
             ),

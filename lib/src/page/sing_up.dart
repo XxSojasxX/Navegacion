@@ -1,8 +1,6 @@
-// ignore_for_file: avoid_unnecessary_containers, prefer_const_constructors, duplicate_ignore
-
 import 'package:flutter/material.dart';
-
-import '../widgets/icon_containers.dart';
+import 'package:navegacion1/src/widgets/icon_containers.dart';
+import 'package:navegacion1/src/widgets/register.dart';
 
 class SignUp extends StatefulWidget {
   const SignUp({super.key});
@@ -23,8 +21,8 @@ class _SignUpState extends State<SignUp> {
           decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: const <Color>[
-                Color.fromARGB(255, 90, 97, 97),
-                Color.fromARGB(238, 25, 26, 25),
+                Color.fromARGB(255, 19, 216, 216),
+                Color.fromARGB(237, 37, 228, 37),
               ],
               begin: Alignment.topCenter,
             ),
@@ -36,7 +34,7 @@ class _SignUpState extends State<SignUp> {
             ),
             children: const <Widget>[
               // Aquí va la URL de una imagen
-              IconContainers(url: "images/logo.jpg"),
+              IconContainers(url: "images/1.jpg"),
               Center(
                 child: Text(
                   "Register",
@@ -61,7 +59,7 @@ class _SignUpState extends State<SignUp> {
               Divider(
                 height: 50.0,
               ),
-              
+              RegisterForm()
             ],
           ),
         ),

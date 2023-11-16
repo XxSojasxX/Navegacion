@@ -30,7 +30,42 @@ class _LoginFormState extends State<LoginForm> {
                   return 'email invalido';
                 }
                 return null!;
-              })
+              }),
+          Divider(
+            height: 50.0,
+          ),
+          InputText(
+              hint: "password",
+              label: "password",
+              obsecure: false,
+              icon: const Icon(Icons.lock_clock),
+              onChanged: (data) {
+                _password = data!;
+              },
+              validator: (data) {
+                if (data?.trim().length == 0) {
+                  return 'password invalido';
+                }
+                return null!;
+              }),
+          Divider(
+            height: 20.0,
+          ),
+          SizedBox(
+            width: double.infinity,
+            height: 60.0,
+            child: ElevatedButton(
+              onPressed: () {},
+              child: Text(
+                "Ingresar",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontFamily: "FreedokaOne",
+                  fontSize: 30.0,
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     ));

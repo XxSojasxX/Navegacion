@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:navegacion1/src/widgets/icon_containers.dart';
+import 'package:navegacion1/src/widgets/login_form.dart';
 
-
-class SingIn extends StatefulWidget {
-  const SingIn({super.key});
+class SignIn extends StatefulWidget {
+  const SignIn({super.key});
 
   @override
-  State<SingIn> createState() => _SingInState();
+  State<SignIn> createState() => _SignInState();
 }
 
-class _SingInState extends State<SingIn> {
+class _SignInState extends State<SignIn> {
   @override
   Widget build(BuildContext context) {
     // ignore: avoid_unnecessary_containers
@@ -21,8 +21,8 @@ class _SingInState extends State<SingIn> {
           decoration: const BoxDecoration(
             gradient: LinearGradient(
               colors: <Color>[
-                Color.fromARGB(255, 90, 97, 97),
-                Color.fromARGB(238, 25, 26, 25),
+                Color.fromARGB(255, 0, 255, 255),
+                Color.fromARGB(236, 31, 31, 204),
               ],
               begin: Alignment.topCenter,
             ),
@@ -34,7 +34,7 @@ class _SingInState extends State<SingIn> {
             ),
             children: const <Widget>[
               // Aquí va la URL de una imagen
-              IconContainers(url: "images/logo.jpg"),
+              IconContainers(url: "images/1.jpg"),
               Center(
                 child: Text(
                   "Login",
@@ -59,7 +59,8 @@ class _SingInState extends State<SingIn> {
               Divider(
                 height: 50.0,
               ),
-              
+              // aqui llamamos a la pantalla del formulario
+              LoginForm()
             ],
           ),
         ),

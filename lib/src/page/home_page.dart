@@ -54,7 +54,7 @@ class _HomePageState extends State<HomePage> {
                 child: ElevatedButton(
                   onPressed: () {
                     final route =
-                        MaterialPageRoute(builder: (context) => const SingUp());
+                        MaterialPageRoute(builder: (context) => const SignUp());
                     Navigator.push(context, route);
                   },
                   child: const Text(
@@ -76,7 +76,7 @@ class _HomePageState extends State<HomePage> {
                   onPressed: () {
                     // ignore: unused_local_variable
                     final route = MaterialPageRoute(
-                        builder: ((context) => const SingIn()));
+                        builder: ((context) => const SignIn()));
                     Navigator.push(context, route);
                   },
                   child: const Text(

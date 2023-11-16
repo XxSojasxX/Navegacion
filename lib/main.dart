@@ -23,8 +23,8 @@ class MyApp extends StatelessWidget {
       initialRoute: "Home",
       routes: <String, WidgetBuilder>{
         "Home": (BuildContext context) => const HomePage(),
-        "Sing_In": (BuildContext context) => const SingIn(),
-        "Sing_up": (BuildContext context) => const SingUp(),
+        "Sing_In": (BuildContext context) => const SignIn(),
+        "Sing_up": (BuildContext context) => const SignUp(),
       },
     );
   }

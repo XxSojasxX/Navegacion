@@ -1,26 +1,28 @@
+// ignore_for_file: avoid_unnecessary_containers, prefer_const_constructors, duplicate_ignore
+
 import 'package:flutter/material.dart';
 
 import '../widgets/icon_containers.dart';
 
-class SingUp extends StatefulWidget {
-  const SingUp({super.key});
+class SignUp extends StatefulWidget {
+  const SignUp({super.key});
 
   @override
-  State<SingUp> createState() => _SingUpState();
+  State<SignUp> createState() => _SignUpState();
 }
 
-class _SingUpState extends State<SingUp> {
+class _SignUpState extends State<SignUp> {
   @override
   Widget build(BuildContext context) {
-    // ignore: avoid_unnecessary_containers
     return Container(
       child: Scaffold(
         body: Container(
           width: double.infinity,
           height: double.infinity,
-          decoration: const BoxDecoration(
+          // ignore: prefer_const_constructors
+          decoration: BoxDecoration(
             gradient: LinearGradient(
-              colors: <Color>[
+              colors: const <Color>[
                 Color.fromARGB(255, 90, 97, 97),
                 Color.fromARGB(238, 25, 26, 25),
               ],
@@ -28,15 +30,14 @@ class _SingUpState extends State<SingUp> {
             ),
           ),
           child: ListView(
-            padding: const EdgeInsets.symmetric(
+            padding: EdgeInsets.symmetric(
               horizontal: 40.0,
               vertical: 200,
             ),
-            // ignore: prefer_const_literals_to_create_immutables
-            children: <Widget>[
+            children: const <Widget>[
               // Aquí va la URL de una imagen
-              const IconContainers(url: "images/logo.jpg"),
-              const Center(
+              IconContainers(url: "images/logo.jpg"),
+              Center(
                 child: Text(
                   "Register",
                   style: TextStyle(
@@ -45,10 +46,10 @@ class _SingUpState extends State<SingUp> {
                   ),
                 ),
               ),
-              const Divider(
+              Divider(
                 height: 20.0,
               ),
-              const Center(
+              Center(
                 child: Text(
                   "Pantalla N°3",
                   style: TextStyle(
@@ -57,7 +58,7 @@ class _SingUpState extends State<SingUp> {
                   ),
                 ),
               ),
-              const Divider(
+              Divider(
                 height: 50.0,
               ),
               

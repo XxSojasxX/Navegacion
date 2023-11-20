@@ -19,7 +19,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     // ignore: avoid_unnecessary_containers
 
-     return Scaffold(
+    return Scaffold(
       appBar: AppBar(title: Text("MENU LATERAL")),
       drawer: MenuLateral(),
       body: Container(
@@ -27,15 +27,16 @@ class _HomePageState extends State<HomePage> {
         height: double.infinity,
         decoration: BoxDecoration(
           gradient: LinearGradient(colors: <Color>[
-            Color.fromARGB(120, 255, 0, 0),
-            Color.fromARGB(0, 194, 23, 228),
+            Color.fromARGB(255, 0, 149, 175),
+            Color.fromARGB(255, 9, 128, 240),
+            Color.fromARGB(255, 164, 10, 236)
           ], begin: Alignment.topCenter),
         ),
         child: ListView(
           padding: EdgeInsets.symmetric(horizontal: 40.0, vertical: 200),
           children: <Widget>[
             //!Aqui se ubica el URL de una imagen
-            const IconContainers(url: "images/lobo1.jpg"),
+            const IconContainers(url: "images/1.jpg"),
             Text(
               "Bienvenidos a mi curso",
               style: TextStyle(
@@ -61,7 +62,8 @@ class _HomePageState extends State<HomePage> {
               height: 60.0,
               child: ElevatedButton(
                 onPressed: () {
-                  final route = MaterialPageRoute(builder: (context) => SignUp());
+                  final route =
+                      MaterialPageRoute(builder: (context) => SignUp());
                   Navigator.push(context, route);
                 },
                 child: Text(
@@ -82,7 +84,8 @@ class _HomePageState extends State<HomePage> {
               height: 60.0,
               child: ElevatedButton(
                 onPressed: () {
-                  final route = MaterialPageRoute(builder: (context) => SignIn());
+                  final route =
+                      MaterialPageRoute(builder: (context) => SignIn());
                   Navigator.push(context, route);
                 },
                 child: Text(
@@ -99,7 +102,6 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
     );
-
 
     return Container(
       child: Scaffold(

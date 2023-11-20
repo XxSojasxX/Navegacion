@@ -1,7 +1,10 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:navegacion1/src/page/home_page.dart';
 import 'package:navegacion1/src/page/sing_in.dart';
 import 'package:navegacion1/src/page/sing_up.dart';
+import 'package:navegacion1/src/widgets/menulateral.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,6 +22,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity
+      ),
+      home: Scaffold(
+        appBar: AppBar(title: Text("MENU LATERAL"),),
+        drawer: MenuLateral(),
       ),
       initialRoute: "Home",
       routes: <String, WidgetBuilder>{

@@ -40,7 +40,7 @@ class _RegisterFormState extends State<RegisterForm> {
           InputText(
               hint: "Nombre",
               label: "Nombre",
-              icon: const Icon(Icons.verified_user),
+              icon: const Icon(Icons.supervised_user_circle),
               onChanged: (data) {
                 _name = data;
               },
@@ -78,7 +78,7 @@ class _RegisterFormState extends State<RegisterForm> {
               child: const Text(
                 "Registrar",
                 style: TextStyle(
-                  color: Colors.white,
+                  color: Color.fromARGB(255, 0, 0, 0),
                   fontFamily: "FreedokaOne",
                   fontSize: 30.0,
                 ),

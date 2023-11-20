@@ -24,7 +24,7 @@ class _SignUpState extends State<SignUp> {
             gradient: const LinearGradient(
               colors: <Color>[
                 Color.fromARGB(255, 19, 216, 216),
-                Color.fromRGBO(181, 122, 221, 0.922),
+                Color.fromRGBO(255, 255, 255, 0.922),
               ],
               begin: Alignment.topCenter,
             ),

@@ -1,6 +1,7 @@
 // ignore_for_file: unused_field, null_check_always_fails, prefer_is_empty
 
 import 'package:flutter/material.dart';
+import 'package:navegacion1/src/page/menu_lateral.dart';
 import 'package:navegacion1/src/widgets/input_text.dart';
 
 class LoginForm extends StatefulWidget {
@@ -57,7 +58,11 @@ class _LoginFormState extends State<LoginForm> {
             width: double.infinity,
             height: 60.0,
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                final route =
+                    MaterialPageRoute(builder: (context) => MenuLateral());
+                Navigator.push(context, route);
+              },
               child: const Text(
                 "Ingresar",
                 style: TextStyle(
